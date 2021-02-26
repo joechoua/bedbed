@@ -94,7 +94,7 @@ body{
 /* btn start */
 
 .back{
-    background-image: url(../bed/bedpic/sleep.jpg);
+    background-image: url(./bedpic/sleep.jpg);
     width: 1196px;
     height: 743px;
     display: flex;

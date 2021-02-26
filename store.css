@@ -90,7 +90,7 @@ body{
 /* big map start */
 
 .bigmap{
-    background-image:url(../bed/bedpic/map.png);
+    background-image:url(./bedpic/map.png);
     width: 1196px;
     height: 218px;
     margin-top: 2px;

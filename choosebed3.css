@@ -1,0 +1,369 @@
+@import url("reset.css");
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 25px;
+}
+
+.wrap{
+    margin: 0 auto;
+    /* border: black 1px solid; */
+    width: 1196px;
+
+}
+
+.topbar{
+
+    width: 1196px;
+    height: 135px;
+    
+    display: flex;
+
+}
+
+
+.logo img{
+
+    height: 120px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.choice{
+    width: 1000px;
+    margin-left: 90px;
+    display: flex;
+}
+.choice ul{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    
+}
+
+
+.choice li{
+
+    flex-grow: 1;
+    color: #223262;
+}
+
+.choice a{
+
+    text-decoration: none;
+
+}
+.choice a:hover{
+    text-decoration:underline;
+    background-color: blanchedalmond;
+    color:coral;
+}
+
+.choice2{
+    width: 200px;
+    display: flex;
+}
+
+.choice2 img{
+    width: 30px;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+
+.breadcrumb{
+    margin-top: 30px;
+    background-color: #F1F4F3;
+    display: flex;
+    padding: 10px;
+}
+
+.breadcrumb li {
+    padding: 2px;
+}
+.breadcrumb li ::after{
+    content: "  >    ";
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+
+
+
+
+/* btn start */
+
+.back{
+    background-image: url(./bedpic/sleep.jpg);
+    width: 1196px;
+    height: 743px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    background-size:cover;
+
+}
+.whiteboard{
+    width: 742px;
+    height: 508px;
+    
+    opacity: .8;
+    background-color: aliceblue;
+    border-radius: 10px;
+  
+    
+}
+.title{
+    width: 300px;
+    margin: 50px auto;
+}
+.title h3{
+   
+   text-align: center;
+}
+
+hr{
+    width: 300px;
+    height: 1px;
+    color: black;
+}
+
+.soft{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.soft{
+    text-align: center;
+    color: #FF7137;
+}
+
+
+.btn{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    
+} 
+
+.leftbox{
+    background-color: cornflowerblue;
+    color: white;
+    height: 50px;
+    border-radius: 20px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.middlebox{
+
+    
+    margin-top: 23px;
+    background-color: darkkhaki;
+    border-radius: 10px;
+    height: 5px;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.smallbox{
+    background-color: grey;
+    z-index: 1;
+    border-radius: 10px;
+    width: 15px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -12px;
+
+    
+}
+
+.rightbox{
+
+    background-color: #ED4340;
+    color: white;
+    border-radius: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    flex-grow: 1;
+}
+
+.btn2{
+
+     display: flex;
+     margin: 0 auto;
+     width:500px;
+     height:100px;
+     margin-top:50px;
+     text-align: center;
+     padding-top: 50px;
+}
+
+.previous{
+    flex-grow: 1;
+    width: 200px;
+    padding-left: 28px;
+
+}
+
+.finalpage{
+    width: 200px;
+    flex-grow: 1;
+    
+}
+
+.btn2 a{
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    border: black 2px solid;
+    color: grey;
+}
+
+.btn2 a:hover{
+    text-decoration:underline;
+    color:coral;
+}
+
+
+/* footer start */
+.footer{
+
+    width: 1196px;
+    height: 198px;
+    background-color:#223262 ;
+    color: white;
+
+}
+.footer a:hover{
+    text-decoration:none;
+    color:rgb(238, 89, 89);
+}
+
+.footer_bar{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.sale{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.sale ul{
+
+   
+}
+
+.sale li{
+
+}
+.sale a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.resource{
+    
+    flex-grow: 1;    
+}
+
+.resource ul{
+   
+}
+
+.resource li{
+
+}
+
+.resource a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.assist{
+    flex-grow: 1;
+}
+
+.assist ul{
+
+}
+
+.assist li{
+
+}
+
+.assist a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.socialmedia{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+}
+
+.socialmedia ul{
+
+}
+
+.socialmedia li{
+
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+.email{
+    width: 250px;
+    
+    padding-left:80px;
+    font-weight: bold;
+    /* border:  1px black solid; */
+}
+
+.email h1{
+    font-size: 20px;
+
+}
+.email input{
+    width: 200px;
+    height: 30px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}

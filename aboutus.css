@@ -1,0 +1,356 @@
+@import url("reset.css");
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 25px;
+}
+
+.wrap{
+    margin: 0 auto;
+    /* border: black 1px solid; */
+    width: 1196px;
+
+}
+
+.topbar{
+
+    width: 1196px;
+    height: 135px;
+    
+    display: flex;
+
+}
+
+
+.logo img{
+
+    height: 120px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.choice{
+    width: 1000px;
+    margin-left: 90px;
+    display: flex;
+}
+.choice ul{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    
+}
+
+
+.choice li{
+
+    flex-grow: 1;
+    color: #223262;
+}
+
+.choice a{
+
+    text-decoration: none;
+
+}
+.choice a:hover{
+    text-decoration:underline;
+    background-color: blanchedalmond;
+    color:coral;
+}
+
+.choice2{
+    width: 200px;
+    display: flex;
+}
+
+.choice2 img{
+    width: 30px;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.breadcrumb{
+    margin-top: 30px;
+    background-color: #F1F4F3;
+    display: flex;
+    padding: 10px;
+}
+
+.breadcrumb li {
+    padding: 2px;
+}
+.breadcrumb li ::after{
+    content: "  >    ";
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+/* brandwhole strat */
+
+.brandwhole{
+    width: 1196px;
+    margin-top: 30px;
+
+}
+
+.concept{
+
+    width: 1196px;
+    height: 239px;
+    display: flex;
+    /* margin-top: 50px; */
+    margin-bottom: 100px;
+}
+
+.concept_pic img{
+    width: 364px;
+    height: 230px;
+    
+}
+
+.concept_word{
+
+    /* border: solid black 1px; */
+    flex-grow: 1;
+    padding: 50px 50px;
+    align-items:space-between;
+    
+}
+.concept_word h1{
+
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+.concept_word p{
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.concept2{
+
+    width: 1196px;
+    height: 239px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.concept_pic2 img{
+    width: 364px;
+    height: 230px;
+    order: 0;    
+}
+
+.concept2_word{
+
+    /* border: solid black 1px; */
+    flex-grow: 1;
+    
+    padding: 50px 50px;
+    order: -1;
+
+    align-items:space-between;
+    
+}
+.concept2_word h1{
+
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+.concept2_word p{
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.concept3{
+
+    width: 1196px;
+    height: 239px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+}
+
+.concept_pic3 img{
+    width: 364px;
+    height: 230px;
+        
+}
+
+.concept3_word{
+
+    /* border: solid black 1px; */
+    flex-grow: 1;
+    
+    padding: 50px 50px;
+    
+
+    align-items:space-between;
+    
+}
+.concept3_word h1{
+
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+.concept3_word p{
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* footer start */
+.footer{
+
+    width: 1196px;
+    height: 198px;
+    background-color:#223262 ;
+    color: white;
+    /* margin-top: 20px; */
+
+}
+.footer a:hover{
+    text-decoration:none;
+    color:rgb(238, 89, 89);
+}
+
+.footer_bar{
+    width: 1100px;
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 40px;
+   
+    
+    
+
+}
+.sale{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+    text-align: center;
+}
+
+.sale ul{
+
+   
+}
+
+.sale li{
+
+}
+.sale a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.resource{
+    
+    flex-grow: 1;
+    /* border: 1px black solid; */
+    
+}
+
+.resource ul{
+   
+}
+
+.resource li{
+
+}
+
+.resource a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.assist{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+}
+
+.assist ul{
+
+}
+
+.assist li{
+
+}
+
+.assist a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.socialmedia{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+}
+
+.socialmedia ul{
+
+}
+
+.socialmedia li{
+
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+.email{
+    width: 250px;
+    
+    padding-left:80px;
+    font-weight: bold;
+    /* border:  1px black solid; */
+}
+
+.email h1{
+    font-size: 20px;
+
+}
+.email input{
+    width: 200px;
+    height: 30px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}

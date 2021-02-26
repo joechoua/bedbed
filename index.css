@@ -1,0 +1,443 @@
+@import url("reset.css");
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 25px;
+}
+
+.wrap{
+    margin: 0 auto;
+    /* border: black 1px solid; */
+    width: 1196px;
+
+}
+
+.topbar{
+
+    width: 1196px;
+    height: 135px;
+    
+    display: flex;
+
+}
+
+
+.logo img{
+
+    height: 120px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.choice{
+    width: 1000px;
+    margin-left: 90px;
+    display: flex;
+}
+.choice ul{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    
+}
+
+
+.choice li{
+
+    flex-grow: 1;
+    color: #223262;
+}
+
+.choice a{
+
+    text-decoration: none;
+
+}
+.choice a:hover{
+    text-decoration:underline;
+    background-color: blanchedalmond;
+    color:coral;
+}
+
+.choice2{
+    width: 200px;
+    display: flex;
+}
+
+.choice2 img{
+    width: 30px;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+
+.product{
+    width: 1196px;
+    height: 517px;
+    margin-top: 30px;
+
+}
+
+.product_pic ul{
+    width: 1196px;
+    display: flex;
+    box-sizing: border-box;
+    /* height: 497px; */
+    overflow: hidden;
+   
+
+}
+
+.product_pic li{
+    
+
+    flex-shrink: 0;
+    
+    width: 1196px;
+    height: 497px;
+   
+
+}
+
+.product_pic img{
+    display: block;
+    width: 100%;  
+   
+}
+
+/* product finished */
+
+/* main start */
+
+.main{
+    width: 1196px;
+    height: 723px;
+    margin-top: 50px;
+    position: relative;
+}
+.main h3{
+    padding-top: 60px;
+    font-size: 50px;
+    color: #223262;
+    text-align: center;
+    font-weight: bold;
+}
+.main img{
+    padding-top:100px ;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+
+}
+.main a img{
+    display: block;
+    width:300px;
+    position: absolute;
+    top:100px;
+    left: 100px;
+    z-index: 1;
+}
+
+
+
+/* 選擇商品 */
+.chooseproduct{
+    margin-top: 100px;
+    width: 1196px;
+    margin-bottom: 100px;
+
+}
+.chooseproduct h3{
+    padding-top: 60px;
+    font-size: 50px;
+    color: #223262;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.wholebox{
+    width: 1195px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+
+.leftbox ul{
+    width: 746px;
+    margin: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftbox li{
+
+    flex-grow: 1;
+
+}
+
+.leftbox img{
+height: 371px;
+width: 300px;
+}
+
+/* rightbox */
+
+.rightbox ul{
+    width: 395px;
+    display: flex;
+    flex-direction:column;
+    /* border: 1px solid black; */
+    margin-top: 24px;
+    
+}
+
+.rightbox li{
+
+    padding: 10px;
+
+}
+
+.rightbox img{
+    height: 171px;
+    display: block;
+}
+
+/* aboutbed start */
+
+.aboutbed{
+
+text-align: center;
+line-height: 1.6;
+padding-bottom: 100px;
+margin: 7px;
+
+
+
+}
+.aboutbed h3{
+    padding-top: 60px;
+    font-size: 50px;
+    color: #223262;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.aboutbed img{
+    display: block;
+    height: 200px ;
+    margin: 0 auto;
+}
+
+.chat{
+    display: inline-block;
+    width: 390px;
+    /* border: 1px solid black; */
+    
+    box-sizing: border-box;
+
+}
+.chat a{
+
+    text-decoration: none;
+    /* background-color: bisque; */
+    color: #223262;
+    
+    width: 60px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.chat p{
+
+    font-size: 20px;
+}
+/* workshop start */
+.workshop{
+    display: inline-block;
+    width: 370px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+
+}
+
+.workshop a{
+    text-decoration: none;
+    /* background-color: bisque; */
+    color: #223262;
+    
+    width: 60px;
+    line-height:20px;
+    padding-bottom: 20px;
+}
+
+.workshop p{
+
+    font-size: 20px;
+}
+
+/* shipping start */
+.shipping{
+    vertical-align: top;
+    width: 390px;
+    box-sizing: border-box;
+    display: inline-block;
+    /* border: 1px solid black; */
+
+}
+
+.shipping a{
+     text-decoration: none;
+     /* background-color: bisque; */
+     color: #223262;
+     width:60px;
+     line-height:30px;
+     padding-bottom: 20px;
+     
+
+
+}
+
+.shipping p{
+    font-size: 20px;
+}
+
+/* footer start */
+.footer{
+
+    width: 1196px;
+    height: 198px;
+    background-color:#223262 ;
+    color: white;
+    /* margin-top: 20px; */
+
+}
+.footer a:hover{
+    text-decoration:none;
+    color:rgb(238, 89, 89);
+}
+
+.footer_bar{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 40px;
+
+
+}
+.sale{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.sale ul{
+
+   
+}
+
+.sale li{
+
+}
+.sale a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.resource{
+    
+    flex-grow: 1;    
+}
+
+.resource ul{
+   
+}
+
+.resource li{
+
+}
+
+.resource a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.assist{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+}
+
+.assist ul{
+
+}
+
+.assist li{
+
+}
+
+.assist a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.socialmedia{
+    flex-grow: 1;
+    /* border: 1px black solid; */
+}
+
+.socialmedia ul{
+
+}
+
+.socialmedia li{
+
+
+}
+
+.socialmedia a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    width: 60px;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.email{
+    width: 250px;
+    
+    padding-left:80px;
+    font-weight: bold;
+    /* border:  1px black solid; */
+}
+
+.email h1{
+    font-size: 20px;
+
+}
+.email input{
+    width: 200px;
+    height: 30px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}

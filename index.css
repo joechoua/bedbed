@@ -472,7 +472,7 @@ width: 300px;
 
 .rightbox ul{
     padding-left: 30px;
-    width: 330px;
+    width: calc(100% - 5px);
     display: flex;
     flex-direction:column;
     margin-top: 24px;
@@ -577,7 +577,7 @@ border:1px solid black;
 .chat{
     display: inline-block;
     width: 390px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     
     box-sizing: border-box;
 
@@ -597,6 +597,7 @@ border:1px solid black;
     padding-top:30px;
     font-size: 20px;
     padding-bottom: 50px;
+    width:380px;
     
     
     border:1px solid black;
@@ -627,7 +628,8 @@ border:1px solid black;
     padding-top:30px;
     font-size: 20px;
     padding-bottom: 50px;
-    
+    width:360px;
+
 
 
 }
@@ -658,7 +660,8 @@ border:1px solid black;
     font-size: 20px;
     padding-top:30px;
     padding-bottom: 50px;
-   
+    width:380px;
+
 
 
 }

@@ -8,23 +8,20 @@ body{
 
 .wrap{
     margin: 0 auto;
-    /* border: black 1px solid; */
-    width: 1196px;
+    max-width: 1196px;
+    width:100%;
 
 }
 
 .topbar{
 
-    width: 1196px;
-    height: 135px;
-    
+    box-sizing: border-box;
     display: flex;
-
 }
 
 
 .logo img{
-
+    
     height: 120px;
     display: block;
     margin-left: 20px;
@@ -38,7 +35,7 @@ body{
 .choice ul{
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
+    
     margin-top: 70px;
     
 }
@@ -97,28 +94,36 @@ body{
 }
 
 .concept{
-
-    width: 1196px;
-    height: 239px;
+    border: 1px black solid;
+    max-width: 1196px;
+    /* height: 239px; */
     display: flex;
-    /* margin-top: 50px; */
     margin-bottom: 100px;
 }
 
 .concept_pic img{
-    width: 364px;
-    height: 230px;
+    max-width: 364px;
+    /* width:100%; */
     
 }
+
+
 
 .concept_word{
-
+    max-width:100%;
+   
     /* border: solid black 1px; */
-    flex-grow: 1;
-    padding: 50px 50px;
-    align-items:space-between;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
     
+    padding: 50px 50px;
+    /* align-items:space-between; */
+    /* width:400px; */
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+    
 .concept_word h1{
 
     font-size: 20px;
@@ -131,6 +136,8 @@ body{
 
     font-size: 15px;
     line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .concept2{

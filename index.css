@@ -52,18 +52,54 @@ body{
 }
 
 .logo{
-  width:100px;
-  
+  width:100%;
+  max-width:100px;
+  /* border: 1px solid black; */
 }
 .logo img{
 
-    height: 120px;
+    width: 100%;
+    max-width:120px;
     display: block;
-   
     margin-left: 20px;
     margin-top: 10px;
 
 }
+@media screen and (max-width: 575px){
+  .logo img{
+    width: 50px;
+    padding:30px;
+    
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .logo img{
+    width:60px;
+    padding:30px;
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .logo img{
+    width:80px;
+    padding:30px;
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .logo img{
+    width:100px;
+    padding:30px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .logo img{
+    width:120px;
+  }
+}
+
+
 .choice{
     max-width: 1000px;
     width: calc(100% - 90px);
@@ -119,6 +155,10 @@ body{
   margin-top: 65px;
   /* border:1px solid red; */
 }
+@media (max-width:767px){
+  .choice2 ul{
+  margin-top:50px;
+}
 
 @media (max-width:800px){
   .choice2 li{
@@ -134,8 +174,10 @@ body{
     max-width:30px;
     width: calc(100% - 30px);
     padding-left: 20px;
-    /* width: 100%; */
+    /* width: 40%; */
 }
+
+
 .choice2 a{
   /* max-width: 20px;
   height:10px; */
@@ -186,7 +228,7 @@ body{
     max-width:1196px;
    
 }
-@media screen and (max-width: 575px){
+  @media screen and (max-width: 575px){
     .product_pic img{
       width: 750px;
      
@@ -577,34 +619,36 @@ padding-bottom: 100px;
 margin:0 auto;
 border:1px solid black;
 }
-/* @media screen and (max-width: 575px){
-    .aboutbed{
-      padding:20px 20px;
-    }
+
+@media screen and (max-width: 575px){
+  .aboutbed{
+    font-size: 12px;
   }
-  
-  @media screen and (min-width: 576px) and (max-width: 767px){
-    .aboutbed{
-        padding:20px 20px;
-    }
-    }
-  
-  @media screen and (min-width: 768px) and (max-width: 991px){
-    .product_pic img{
-      width:900px;
-    }
-    }
-  
-  @media screen and (min-width: 991px) and (max-width: 1199px){
-    .product_pic img{
-      width:1150px;
-    }
-    }
-  @media screen and (min-width: 1200px){
-    .product_pic img{
-      width:1200px;
-    }
-  } */
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .aboutbed{
+    font-size: 14px;
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .aboutbed{
+    font-size: 16px;
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .aboutbed{
+    font-size:17px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .aboutbed{
+    font-size:20px;
+  }
+}
+
 
 .aboutbed h3{
     padding-top: 60px;
@@ -614,6 +658,35 @@ border:1px solid black;
     font-weight: bold;
     padding-bottom: 40px;
 
+}
+
+@media screen and (max-width: 575px){
+  .aboutbed h3{
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .aboutbed h3{
+    font-size: 30px;
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .aboutbed h3{
+    font-size: 35px;
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .aboutbed h3{
+    font-size:40px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .aboutbed h3{
+    font-size:50px;
+  }
 }
 .aboutbed img{
     display: block;
@@ -637,7 +710,6 @@ border:1px solid black;
     text-decoration: none;
     /* background-color: bisque; */
     color: #223262;
-    
     width: 60px;
     line-height: 20px;
     
@@ -648,11 +720,35 @@ border:1px solid black;
     font-size: 20px;
     padding-bottom: 50px;
     width:360px;
-    
-    
     /* border:1px solid black; */
+}
+@media screen and (max-width: 575px){
+  .chat p{
+    font-size: 12px;
+  }
+}
 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .chat p{
+    font-size: 14px;
+  }
+  }
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .chat p{
+    font-size: 16px;
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .chat p{
+    font-size:17px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .chat p{
+    font-size:20px;
+  }
 }
 /* workshop start */
 .workshop{

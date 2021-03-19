@@ -8,39 +8,139 @@ body{
 
 .wrap{
     margin: 0 auto;
-    /* border: black 1px solid; */
-    width: 1196px;
+    max-width: 1196px;
+    width:100%;
+    /* background-color:gray; */
 
 }
-
+@media (max-width:800px){
+    .wrap p{
+      font-size: 13px;
+  }
+    .wrap h3{
+    font-size: 15px;
+    
+  }
+  .wrap h1{
+    font-size: 15px;
+    
+  }
+    .wrap a{
+    font-size: 14px;
+  }
+  .wrap button{
+    font-size: 20px;
+  }
+  .wrap ol{
+    font-size: 15px;
+  }
+  .wrap h4{
+      font-size: 17px;
+  }
+  
+}
 .topbar{
 
-    width: 1196px;
-    height: 135px;
     
+    box-sizing: border-box;
     display: flex;
+
+    /* border:1px solid black; */
+
+        
+}
+.btn_hamburger{
+
+  display:none;
+  border:none;
+  /* background-color: transparent; */
+}
+.btn_hamburger span{
+  display:block;
+  max-width:40px;
+  width: 100%;
+  margin:10px;
+  /* padding: .1px; */
+  height: .5px;
+  background-color:#223262;
 
 }
 
 
+
+@media (max-width:800px){
+  .btn_hamburger{
+    background-color:white;
+    display:inline-block;
+
+}
+
+}
+
+.logo{
+  width:100%;
+  max-width:100px;
+  /* border: 1px solid black; */
+}
 .logo img{
 
-    height: 120px;
+    width: 100%;
+    max-width:120px;
     display: block;
     margin-left: 20px;
     margin-top: 10px;
+
 }
+@media screen and (max-width: 575px){
+  .logo img{
+    width: 50px;
+    padding:30px;
+    
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .logo img{
+    width:60px;
+    padding:30px;
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .logo img{
+    width:80px;
+    padding:30px;
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .logo img{
+    width:100px;
+    padding:30px;
+  }
+  }
+@media screen and (min-width: 1200px){
+  .logo img{
+    width:120px;
+  }
+}
+
+
 .choice{
-    width: 1000px;
+    max-width: 1000px;
+    width: calc(100% - 90px);
     margin-left: 90px;
     display: flex;
+    /* border:2px solid yellow; */
 }
+
 .choice ul{
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     margin-top: 70px;
-    
+    /* border:2px solid red; */
+
 }
 
 
@@ -49,9 +149,16 @@ body{
     flex-grow: 1;
     color: #223262;
 }
+@media (max-width:800px){
+  .choice li{
 
+  display:none;
+
+}
+
+}
 .choice a{
-
+    color: #223262;
     text-decoration: none;
 
 }
@@ -62,15 +169,80 @@ body{
 }
 
 .choice2{
-    width: 200px;
+    max-width:200px;
+    width: 100%;
     display: flex;
+    /* border:2px solid blue; */
+}
+
+.choice2 ul{
+  flex-grow: 1;
+  display: flex;
+  margin-top: 65px;
+  /* border:1px solid red; */
+}
+
+
+
+@media (max-width:800px){
+  .choice2 ul{
+  display:inline-block;
+}
+
+}
+.choice2 li{
+  color: #223262;
 }
 
 .choice2 img{
-    width: 30px;
-    flex-grow: 1;
-    padding-left: 30px;
+    max-width:30px;
+    width: calc(100% - 30px);
+    padding-left: 20px;
+    /* width: 40%; */
 }
+@media screen and (max-width: 575px){
+  .choice2 img{
+    width: 20px;
+    
+    
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .choice2 img{
+    width:20px;
+    
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .choice2 img{
+    width:25px;
+    
+  }
+  }
+
+@media screen and (min-width: 991px) and (max-width: 1199px){
+  .choice2 img{
+    width:30px;
+    
+  }
+  }
+@media screen and (min-width: 1200px){
+  .choice2 img{
+    width:30px;
+  }
+}
+
+
+.choice2 a{
+  /* max-width: 20px;
+  height:10px; */
+  text-decoration: none;
+  background-color:none;
+  color:red;
+}
+
 
 .breadcrumb{
     margin-top: 30px;
@@ -91,7 +263,8 @@ body{
 /* 大圖延展 */
 
 .bigpic{
-    width: 1196px;
+    max-width: 1196px;
+    width: 100%;
     height: 300px;
     background-image: url(./bedpic/sleeponbed.jpg);
     background-color: rgba(0, 0, 0, .4);
@@ -121,9 +294,12 @@ body{
 
 .wholeproduct{
 
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 1px solid black;
+
 
 }
 
@@ -131,6 +307,8 @@ body{
     width: 1196px;
     padding-top: 50px;
     margin-bottom: 50px;
+    border: 1px solid black;
+
 
 
 }
@@ -140,18 +318,22 @@ body{
     width: 1200px;
     box-sizing: border-box;
     display: flex;
+    border: 1px solid black;
+
     
 }
 
 .product_info li{
     flex-grow: 1;
+    flex-wrap: wrap;
     padding-left: 50px;
 }
 
 .product_info img{
 
-    width:300px ;
-    flex-wrap: wrap;
+    max-width:300px ;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .product_info h3{
@@ -172,7 +354,7 @@ body{
     background-color: #F6DB85;
     color: #1E306E;
     align-items: flex-end;
-    float: right;
+    float:right;
     margin-right: 40px;
     
 }
@@ -186,14 +368,14 @@ body{
 
 .product_info2{
     width: 1196px;
-    /* border: solid 1px black */
-    margin-bottom: 50px;
-
+    border: solid 1px black;
+    margin-bottom:50px;
 }
 
 .product_info2 ul{
     margin-bottom: 50px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     /* height: 600px; */
     box-sizing: border-box;
     display: flex;
@@ -207,7 +389,8 @@ body{
 
 .product_info2 img{
 
-    width:300px ;
+    max-width:300px ;
+    width: 100%;
 }
 
 .product_info2 h3{
@@ -325,11 +508,9 @@ body{
 /* footer start */
 .footer{
 
-    width: 1196px;
-    height: 198px;
     background-color:#223262 ;
     color: white;
-    margin-top: 100px;
+    /* margin-top: 20px; */
 
 }
 .footer a:hover{
@@ -338,16 +519,21 @@ body{
 }
 
 .footer_bar{
-    width: 1100px;
+    max-width: 1200px;
+    width:100%;
     display: flex;
-    flex-direction: row;
     text-align: center;
     padding-top: 40px;
+    /* border:5px solid black; */
+    flex-wrap: wrap;
+
 }
 .sale{
     flex-grow: 1;
-    /* border: 1px black solid; */
     text-align: center;
+    width:220px;
+    border:solid 1px black;
+    margin-bottom: 20px;
 }
 
 .sale ul{
@@ -369,9 +555,10 @@ body{
 
 .resource{
     
-    flex-grow: 1;
-    /* border: 1px black solid; */
-    
+    flex-grow: 1;  
+    /* border:solid 1px black; */
+    width:220px;
+
 }
 
 .resource ul{
@@ -393,6 +580,8 @@ body{
 
 .assist{
     flex-grow: 1;
+    /* border:solid 1px black; */
+    width:220px;
     /* border: 1px black solid; */
 }
 
@@ -415,6 +604,7 @@ body{
 
 .socialmedia{
     flex-grow: 1;
+    width:220px;
     /* border: 1px black solid; */
 }
 
@@ -435,11 +625,13 @@ body{
     line-height: 40px;
     font-size: 17px;
 }
+
 .email{
     width: 250px;
-    
-    padding-left:80px;
+    /* padding-top: 30px; */
+    padding-left:50px;
     font-weight: bold;
+
     /* border:  1px black solid; */
 }
 

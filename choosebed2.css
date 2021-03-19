@@ -224,7 +224,7 @@ body{
 .whiteboard{
     max-width: 742px;
     width: 90%;
-    height: 508px;
+    min-height: 508px;
     
     opacity: .8;
     background-color: aliceblue;
@@ -249,7 +249,7 @@ hr{
 
 .btn ul{
     display: flex;
-    max-height: 300px;
+    /* max-height: 300px; */
     margin: 0 auto;
     border:1px solid black;
     max-width: 742px;

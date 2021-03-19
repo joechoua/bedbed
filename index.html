@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
 
 
 </head>
@@ -47,15 +49,32 @@
         </div>
         
         <!-- product1 start -->
+        <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./bedpic/bed2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./bedpic/page2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./bedpic/indexbed.png " alt=""></div>
+                <!-- <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div> >
+                <div class="swiper-slide">Slide 10</div>
+                </div> -->
+                <!-- Add Arrows --> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> 
+            </div>
 
-        <div class="product">
+        <!-- <div class="product">
             <div class="product_pic">
             <ul>
                 <li> <img src="./bedpic/bed.jpg" alt=""></li>
-                <!-- <li><img src="./bedpic/8137.jpg" alt=""></li> -->
+                <li><img src="./bedpic/8137.jpg" alt=""></li>
             </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- product1 finished -->
 
@@ -173,6 +192,14 @@
         </div>
     </div>
 
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
 </body>
 </html>

@@ -8,16 +8,33 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aboutus.css">
+    <link href="hamburgers.css"rel="stylesheet">
+
 </head>
 <body>
     <div class="wrap">
         <!-- 選單start -->
         <div class="topbar"> 
-            <button type="button" class="btn_hamburger">
+            <button class="hamburger hamburger--emphatic" type="button" id="hamburger">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+
+            
+                 <ul id="menu" style = "display:none">
+                    <li><a href="aboutus.html">床事</a><hr></li>
+                    
+                    <li><a href="product.html">床伴</a><hr></li>
+                    <li><a href="choosebed1.html">選你的床</a><hr></li>
+                    <li><a href="survey.html">客製化</a><hr></li>
+                    <li><a href="store.html">門市資訊</a><hr></li>
+                </ul> 
+            <!-- <button type="button" class="btn_hamburger">
                 <span> </span>
                 <span> </span>
                 <span> </span>
-            </button>
+            </button> -->
             <div class="logo">
             <!-- <img src="../bed/bed pic/logo .png" alt=""> -->
             <a href="index.html"><img src="./bedpic/logo.png" alt=""></a>
@@ -146,6 +163,23 @@
         </div>
 
     </div>
- 
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+          // Toggle class "is-active"
+          hamburger.classList.toggle("is-active");
+
+          // Do something else, like open/close menu
+
+          var menu =document.getElementById("menu");
+           if(menu.style.display === "none"){
+             menu.style.display = "block";
+           }else if(menu.style.display === "block" ){
+            menu.style.display  = "none";
+           }
+        });
+    </script>
 </body>
 </html>

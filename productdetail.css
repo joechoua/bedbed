@@ -14,7 +14,7 @@ body{
 
 }
 @media (max-width:800px){
-div.wrap div.aboutbed p{
+div.wrap p{
   font-size:18px;
 }
 .wrap h3{
@@ -34,6 +34,9 @@ font-size: 15px;
 }
 .wrap h4{
   font-size: 25px;
+}
+div.wrap div.info_word h1{
+  font-size:25px;
 }
 
 }
@@ -276,17 +279,27 @@ color:red;
 
     max-width:1196px;
     width: 100%;
-    height: 722px;
+    /* height: 722px; */
     background-color: #F1F4F3;
     display: flex;
     margin-top: 2px;
+    border:1px solid red;
     
 }
+@media (max-width:850px){
+  .product_wrapper{
+  flex-direction: column;
+  }
+  
+  }
 
 .product_sample{
     max-width: 461px;
+    width: 100%;
     padding-top: 130px;
     margin-left: 70px;
+    border:1px solid red;
+
     
 }
 
@@ -294,12 +307,14 @@ color:red;
     width: 100%;
 }
 .sample_small{
-    max-width: 461px;
-    /* border: black 1px solid; */
+  margin:0 auto;
+    max-width: 300px;
+    border: black 1px solid;
     display: flex;
 }
 .sample_small img{
-    
+    border:1px solid red;
+    margin: 0 auto;
     max-width: 70px;
     width: 100%;
     box-sizing: border-box;
@@ -310,9 +325,18 @@ color:red;
 }
 
 .product_info{
-    width: 508px;
+    max-width: 508px;
+    width: 100%;
     margin: 130px auto;
+    border:3px solid yellowgreen;
+
 }
+/* @media (max-width:850px){
+  .product_info{
+  flex-direction: column;
+  }
+  
+  } */
 
 .info_word h1{
     font-size: 50px;
@@ -324,8 +348,9 @@ color:red;
 }
 
 .info_choose1 {
-    /* border: solid 1px black; */
-    width:508px;
+    border: solid 1px black;
+    max-width:508px;
+    width: 100%;
     /* height:200px; */
     margin-top: 40px;
 
@@ -337,7 +362,8 @@ color:red;
 
 .info_choose1 select{
     padding-left: 40px;
-    width: 120px;
+    max-width: 120px;
+    width: 100%;
     height: 40px;
     font-size: 15px;
     margin-left: 20px;
@@ -345,8 +371,9 @@ color:red;
 }
 
 .info_choose2 {
-    /* border: solid 1px black; */
-    width:508px;
+    border: solid 1px black;
+    max-width:508px;
+    width: 100%;
     /* height:200px; */
     margin-top: 20px;
     padding-bottom: 20px;
@@ -380,7 +407,7 @@ color:red;
     
     display: inline-block;
     border-radius: 5px;
-    /* border: solid blue 1px; */
+    border: solid blue 1px;
     background-color: #223262;
     width: 150px;
     height: 50px;
@@ -394,6 +421,7 @@ color:red;
 
 
 .shopinfo{
+
     margin-top: 100px;
 }
 .shopinfo h1{
@@ -402,8 +430,9 @@ color:red;
     padding-bottom: 20px;
 }
 .shopinfo2{
-    width: 1196px;
-    height: 500px;
+    max-width: 1196px;
+    width: 100%;
+    /* height: 500px; */
     line-height: 2;
     padding: 50px;
 }

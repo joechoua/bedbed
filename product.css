@@ -330,6 +330,7 @@ color:red;
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid black;
 
     

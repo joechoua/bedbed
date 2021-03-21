@@ -121,6 +121,7 @@ body{
     /* margin-top: 35px; */
     border:none;
     display:inline-block;
+    cursor: pointer;
 }
   }
 

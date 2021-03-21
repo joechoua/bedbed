@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="productdetail.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
 </head>
 <body>
     <div class="wrap">
@@ -144,8 +146,51 @@
         </div>
 
         <div class="reco_pic">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                    <li>
+                        <img src="./bedpic/productuse1.jpg" alt="">
+                        <h3>立體床墊</h3>
+                        <a href="#">Shop</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                    <img src="./bedpic/productuse2.jpg" alt="">
+                    <h3>記憶床墊</h3>
+                    <a href="productdetail.html">Shop</a>
+                    </li>
+                 </ul>
+            </div>
+                <div class="swiper-slide">
+                    <ul>
+                    <li>
+                        <img src="./bedpic/productuse3.jpg" alt="">
+                        <h3>硬板床墊</h3>
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+                </div> -->
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
 
-            <ul>
+
+
+            <!-- <ul>
                 <li>
                     <img src="./bedpic/productuse1.jpg" alt="">
                     <h3>立體床墊</h3>
@@ -164,7 +209,8 @@
                     <a href="#">Shop</a>
                 </li>
 
-            </ul>
+            </ul> -->
+        </div>
         </div>
 
 
@@ -217,6 +263,20 @@
         </div>
 
     </div>
-    
+   
+   
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <!-- Swiper JS -->
+        <script src="../package/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true,
+        },
+        });
+  </script>
 </body>
 </html>

@@ -311,6 +311,12 @@ color:red;
 .breadcrumb a{
     text-decoration: none;
 }
+@media (max-width:800px){
+  .breadcrumb li{
+  font-size:20px;
+  }
+  
+  }
 /* brandwhole strat */
 
 .brandwhole{

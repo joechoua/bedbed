@@ -115,7 +115,7 @@
                 <div class="leftbox">
                     <ul>
                         
-                    <li class="left1"><img src="./bedpic/bed2.jpg" alt="">
+                    <li ><img src="./bedpic/bed2.jpg" alt="">
                         <div class="content-details fadeIn-top">
                             <h3>Mattreness</h3>
                             
@@ -125,7 +125,8 @@
                             </button>
                           </div>
                     </li>
-                    <li class="left2"><img src="./bedpic/bed3.jpg" alt="">
+
+                    <li ><img src="./bedpic/bed3.jpg" alt="">
                         <div class="content-details fadeIn-top">
                             <h3>Sheet</h3>
                             <button class="shop" >
@@ -184,14 +185,27 @@
 
         <div class="footer">
             <div class="footer_bar">
-                <div class="sale">
+                <div class="sale drop">
                 <ul>
+                    <div class="vv">
                     <h4>商品</h4>
-                    <li><a href="#">床墊</a></li>
-                    <li><a href="#">眠枕</a></li>
-                    <li><a href="#">床單</a></li>
+                    </div>
+                    <li class="abc"><a href="#">床墊</a></li>
+                    <li class="abc"><a href="#">眠枕</a></li>
+                    <li class="abc"><a href="#">床單</a></li>
                 </ul>
 
+                </div>
+                <div class="sale drop2">
+                    <ul> 
+                        <div class="bb">
+                        <h4>資源</h4>
+                        </div>
+                        <li class="def"><a href="#">折扣碼</a></li>
+                        <li class="def"><a href="#">最新消息</a></li>
+                        <li class="def"><a href="#">工藝</a></li>
+                    </ul>
+    
                 </div>
 
                 <div class="resource">
@@ -260,5 +274,57 @@
            }
         });
       </script>
+      
+      <script>
+          var drop = document.querySelectorAll('.drop')
+
+          for (let index = 0; index < drop.length; index++) {
+              const element = drop[index];
+              const footer_bar = element.querySelector('.vv')
+              footer_bar.addEventListener('click',()=>{
+                    const lis = document.querySelectorAll('.abc')
+                    for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                        const li = lis[sub_index];
+                        li.classList.toggle("-on")
+                    }
+                    // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+              });
+              
+          }
+
+          var drop = document.querySelectorAll('.drop2')
+
+          for (let index = 0; index < drop.length; index++) {
+              const element = drop[index];
+              const footer_bar = element.querySelector('.bb')
+              footer_bar.addEventListener('click',()=>{
+                    const lis = document.querySelectorAll('.def')
+                    for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                        const li = lis[sub_index];
+                        li.classList.toggle("-on")
+                    }
+                    // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+              });
+              
+          }
+//           const lis = document.querySelectorAll('.abc')
+// console.log(lis)
+//           const li = document.querySelector('.abc')
+// console.log(li)
+
+
+
+        //   var footer_bar = document.getElementsByClassName("vv")[0];
+        //   footer_bar.addEventListener("click", function(){
+        //  footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+
+
+            
+              
+        //   });
+          
+      </script>
+
+
 </body>
 </html>

@@ -311,25 +311,38 @@ body{
     width: 100%;
     /* height: 239px; */
     display: flex;
+    flex-direction: row;
     margin-top: 50px;
     margin-bottom: 100px;
+    border: #223262 1px solid;
 }
-
+@media screen and (max-width:615px){
+  .information{
+    flex-direction: column;
+  }
+}
 .info_pic img{
     max-width: 364px;
     width:100%;
+    display: block;
     /* height: 230px; */
     
+}
+@media screen and (max-width:615px){
+  .info_pic img{
+    margin:0 auto;
+  }
 }
 
 .info_word{
     max-width:800px;
-    width: 100%;
+    width: calc(100%-50px);
     flex-grow: 1;
     padding: 50px 50px;
     align-items:space-between;
-    
+    border:1px solid black;
 }
+
 .info_word h1{
 
     font-size: 20px;
@@ -347,25 +360,47 @@ body{
 .appointment{
     max-width: 1196px;
     width: 100%;
-    /* height: 239px; */
     display: flex;
+    flex-direction: row;
     margin-top: 50px;
     margin-bottom: 100px;
+    border:2px solid blue;
+}
+@media screen and (max-width:615px){
+  .appointment{
+    flex-direction: column;
+  }
 }
 
 .ap_pic2 img{
     max-width: 364px;
     width:100%;
-    /* height: 230px; */
-    order: 0;
+    order: -1;
+    display:block;
+}
+
+@media screen and (max-width:615px){
+  .ap_pic2 img{
+  margin:0 auto;
+  order:0;
+}
 }
 
 .ap_word{
 
-    flex-grow: 1;
-    padding: 50px 50px;
-    align-items:space-between;
-    order: -1;
+  max-width:800px;
+  width: calc(100%-50px);
+  flex-grow: 1;
+  padding: 50px 50px;
+  align-items:space-between;
+  border:1px solid black;
+  order:-2;
+}
+@media screen and (max-width:615px){
+  .ap_word{
+  
+  order:1;
+}
 }
 .ap_word h1{
 
@@ -384,13 +419,14 @@ body{
 
 
 .document{
-    border: 1px black solid;
+    border: 5px red solid;
     max-width: 1196px;
     width: 100%;
     margin: 0 auto;
     background-color: #F1F4F3;
+    box-sizing: border-box;
 }
-@media screen and (max-width: 575px){
+/* @media screen and (max-width: 575px){
     .document input{
       width:40%;
       
@@ -413,14 +449,20 @@ body{
     .document input{
       width:80%;
     }
-    }
+    } */
   
 .docuwhole{
-    /* border: 1px solid black; */
+    border: 1px solid yellow;
     margin: 0 auto;
     max-width: 800px;
     width:100%;
+    box-sizing: border-box;
 }
+@media screen and (max-width: 575px){
+  .docuwhole{
+  }
+}
+
 .docu1{
     padding: 20px;
     display: flex;
@@ -438,12 +480,13 @@ body{
 }
 
 .name{
-    /* border:1px solid black; */
+    border:1px solid black;
     max-width: 900px;
-    width: 100%;
+    width: calc(100%-80px);
     margin-top: 80px;
     padding-left:80px;
     font-weight: bold;
+    box-sizing: border-box;
 
 }
 
@@ -453,16 +496,21 @@ body{
 }
 .name input{
     max-width: 700px;
-    width: 100%;
+    width: 90%;
     height: 30px;
     margin-top: 10px;
+
 }
 
 .sex{
-    width: 900px;
-    margin-top: 40px;
+  border:1px solid sandybrown;
+
+  width: calc(100%-80px);
+  max-width: 900px;
+
+  margin-top: 40px;
     padding-left:80px;
-    display: inline-block;
+    display: block;
 }
 
 .sex h1{
@@ -471,11 +519,13 @@ body{
 
 }
 .sex input{
+  
     width: 30px;
     padding: 20px;
     height: 20px;
     margin-top: 10px;
     text-align: center;
+    /* border: #223262 solid 5px; */
 }
 .sex label{
     font-size: 20px;
@@ -483,7 +533,9 @@ body{
 }
 
 .date{
-    width: 900px;
+    max-width: 900px;
+    width: calc(100%-80px);
+
     margin-top: 40px;
     padding-left:80px;
 }
@@ -495,22 +547,26 @@ body{
 }
 .date input{
     max-width: 700px;
-    width: 100%;
+    width: 90%;
     height: 30px;
     margin-top: 10px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .people{
-    /* border:1px solid black; */
-    width: 900px;
+    border:1px solid black;
+    max-width: 900px;
+    width: calc(100%-80px);
+
     margin-top: 40px;
     padding-left:80px;
 }
 
 
 .people input{
-    width: 700px;
+    max-width: 700px;
+    width: 90%;
+
     height: 30px;
     margin-top: 10px;
     font-size: 15px;
@@ -533,7 +589,8 @@ body{
 }
 
 .tel{
-    width: 900px;
+    max-width: 900px;
+    width: calc(100%-80px);
     margin-top: 40px;
     padding-left:80px;
     font-weight: bold;
@@ -545,13 +602,15 @@ body{
 
 }
 .tel input{
-    width: 700px;
+    max-width: 700px;
+    width:90%;
     height: 30px;
     margin-top: 10px;
 }
 
 .email1{
-    width: 900px;
+    max-width: 900px;
+    width: calc(100%-80px);
     margin-top: 40px;
     padding-left:80px;
     font-weight: bold;
@@ -563,13 +622,15 @@ body{
 
 }
 .email1 input{
-    width: 700px;
+    max-width: 700px;
+    width: 90%;
     height: 30px;
     margin-top: 10px;
 }
 
 .comment{
-    width: 900px;
+    max-width: 900px;
+    width: calc(100%-80px);
     margin-top: 20px;
     padding-left:80px;
     font-weight: bold;
@@ -586,7 +647,8 @@ body{
 }
 .comment textarea{
     
-    width: 700px;
+    max-width: 700px;
+    width: 87%;
     height: 100px;
     margin-top: 10px;
 

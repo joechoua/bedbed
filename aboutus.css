@@ -1,9 +1,11 @@
 @import url("reset.css");
 
 body{
-    background-color: rgb(255, 255, 255);
-    font-family: 'Noto Serif TC', serif;
-    font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  /* font-family: 'Noto Serif TC',,  serif; */
+  /* font-family: 'PingFangTC-Regular', sans-serif; */
+    font-family:  sans-serif;   
+   font-size: 25px;
 }
 
 .wrap{
@@ -47,12 +49,13 @@ position: relative;
       
 }
 #hamburger{
-
+/* width:60px; */
 display:none; 
 border:none;
 }
 .hamburger--emphatic{
 display:none;
+/* width: 60px; */
 }
 @media (max-width:800px){
 #hamburger{
@@ -89,13 +92,13 @@ border:none;
 width:20px;
 margin:0 auto;
 text-align: center;
-/* margin:10px; */
-/* padding: .1px;  */
-/* height: .5px; */
 background-color:white;
 color: white;
+z-index: 5;
+/* border:2px solid black; */
 
 }
+
 @media (min-width:800px){
 .hamburger span{
   display:none;
@@ -104,43 +107,51 @@ color: white;
 }
 
 @media (max-width:575px){
-.hamburger hamburger--emphatic{
-  width:80px;
+.hamburger .hamburger--emphatic{
+  width:100px;
   /* height:70px; */
   background-color: #526599;
   /* margin-top: 20px; */
   border:none;
-  display:inline-block;
+  display:block;
+  /* display:inline-block; */
 }
 }
 @media screen and (min-width: 576px) and (max-width: 800px){
-.hamburger hamburger--emphatic{
-  width:80px;
+.hamburger .hamburger--emphatic{
+  width:120px;
   /* height:70px; */
   background-color: #526599;
   /* margin-top: 35px; */
   border:none;
-  display:inline-block;
+  display:block;
+  /* display:inline-block; */
+  /* cursor: pointer; */
 }
 }
 
 .logo{
 width:100%;
-max-width:100px;
-/* border: 1px solid black; */
+max-width: 200px;
+border: 1px solid black;
 box-sizing: border-box;
+margin-left:20px;
+margin-top: -20px;
+
+
 }
 .logo img{
 
-  width: 100%;
-  max-width:120px;
+  width:180px; 
+  /* max-width:200px;  */
   display: block;
-  margin-left: 20px;
-  margin-top: 10px;
+  /* margin-left:20px; */
+  border: 1px solid blue;
+
   /* box-sizing: border-box; */
 
 }
-@media screen and (max-width: 575px){
+/* @media screen and (max-width: 575px){
 .logo img{
   width: 50px;
   padding:20px;
@@ -172,7 +183,7 @@ box-sizing: border-box;
 .logo img{
   width:120px;
 }
-}
+} */
 
 
 .choice{
@@ -180,7 +191,7 @@ box-sizing: border-box;
   width: calc(100% - 90px);
   margin-left: 90px;
   display: flex;
-  border:2px solid yellow;
+  /* border:2px solid yellow; */
 }
 
 .choice ul{
@@ -188,7 +199,7 @@ box-sizing: border-box;
   display: flex;
   flex-direction: row;
   margin-top: 70px;
-  border:2px solid red;
+  /* border:2px solid red; */
 
 }
 
@@ -293,8 +304,6 @@ color:red;
 
 
 
-
-
 .breadcrumb{
     margin-top: 30px;
     background-color: #F1F4F3;
@@ -317,6 +326,7 @@ color:red;
   }
   
   }
+
 /* brandwhole strat */
 
 .brandwhole{
@@ -338,6 +348,7 @@ color:red;
 .concept_pic img{
     max-width: 364px;
     width:100%;
+    
 }
 
 .concept_word{
@@ -356,6 +367,12 @@ color:red;
     flex-direction: column;
   }
   }
+  @media screen and (max-width: 800px){
+    .concept img{
+      margin: 0 auto;
+      display:block;
+    }
+    }
     
 .concept_word h1{
 
@@ -387,7 +404,12 @@ color:red;
   width:100%;
   order:0;   
 }
-
+@media screen and (max-width: 800px){
+  .concept_pic2 img{
+    margin: 0 auto;
+    display:block;
+  }
+  }
 .concept2_word{
 
   max-width: 800px;
@@ -445,7 +467,12 @@ color:red;
     /* height: 230px; */
         
 }
-
+@media screen and (max-width: 800px){
+  .concept_pic3 img{
+    margin: 0 auto;
+    display:block;
+  }
+  }
 .concept3_word{
 
   max-width: 800px;

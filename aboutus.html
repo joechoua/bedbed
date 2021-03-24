@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="aboutus.css">
     <link href="hamburgers.css"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/629678d7ab.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -210,6 +212,85 @@
            }
         });
     </script>
+
+<script>
+    var drop = document.querySelectorAll('.drop')
+
+    for (let index = 0; index < drop.length; index++) {
+        const element = drop[index];
+        const footer_bar = element.querySelector('.vv')
+        footer_bar.addEventListener('click',()=>{
+              const lis = document.querySelectorAll('.abc')
+              for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                  const li = lis[sub_index];
+                  li.classList.toggle("-on")
+              }
+              // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+        });
+        
+    }
+
+    var drop = document.querySelectorAll('.drop2')
+
+    for (let index = 0; index < drop.length; index++) {
+        const element = drop[index];
+        const footer_bar = element.querySelector('.bb')
+        footer_bar.addEventListener('click',()=>{
+              const lis = document.querySelectorAll('.def')
+              for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                  const li = lis[sub_index];
+                  li.classList.toggle("-on")
+              }
+              // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+        });
+        
+    }
+
+    var drop = document.querySelectorAll('.drop3')
+
+    for (let index = 0; index < drop.length; index++) {
+        const element = drop[index];
+        const footer_bar = element.querySelector('.assist')
+        footer_bar.addEventListener('click',()=>{
+              const lis = document.querySelectorAll('.asss')
+              for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                  const li = lis[sub_index];
+                  li.classList.toggle("-on")
+              }
+              // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+        });
+        
+    }
+    var drop = document.querySelectorAll('.drop4')
+
+    for (let index = 0; index < drop.length; index++) {
+        const element = drop[index];
+        const footer_bar = element.querySelector('.socialmedia')
+        footer_bar.addEventListener('click',()=>{
+              const lis = document.querySelectorAll('.pf1')
+              for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                  const li = lis[sub_index];
+                  li.classList.toggle("-on")
+              }
+              // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+        });
+        
+    }
+//           const lis = document.querySelectorAll('.abc')
+// console.log(lis)
+//           const li = document.querySelector('.abc')
+// console.log(li)
+
+
+
+  //   var footer_bar = document.getElementsByClassName("vv")[0];
+  //   footer_bar.addEventListener("click", function(){
+  //  footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+      
+        
+  //   });
+    
+</script>
 
     
 </body>

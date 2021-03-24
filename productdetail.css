@@ -322,6 +322,7 @@ color:red;
 .sample_small{
     margin:0 auto;
     max-width: 300px;
+    width: 100%;
     /* border: black 1px solid; */
     display: flex;
 }

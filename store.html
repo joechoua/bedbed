@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="store.css">
     <link href="hamburgers.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/629678d7ab.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -215,49 +217,81 @@
 
         <div class="footer">
             <div class="footer_bar">
-            <div class="sale">
+
+                <div class="sale drop">
                 <ul>
+                    <div class="vv">
                     <h4>商品</h4>
-                    <li><a href="#">床墊</a></li>
-                    <li><a href="#">眠枕</a></li>
-                    <li><a href="#">床單</a></li>
+                    <i class="fas fa-angle-down"></i>
+
+                    </div>
+                    <li class="abc"><a href="#">床墊</a></li>
+                    <li class="abc"><a href="#">眠枕</a></li>
+                    <li class="abc"><a href="#">床單</a></li>
                 </ul>
 
-            </div>
+                </div>
 
-            <div class="resource">
-                <ul>
-                    <h4>資源</h4>
-                    <li><a href="#">折扣碼</a></li>
-                    <li><a href="#">最新消息</a></li>
-                    <li><a href="#">工藝</a></li>
-                </ul>
-            </div>
+                <div class="sale drop2">
+                    <ul> 
+                        <div class="bb">
+                        <h4>資源</h4>
+                        <i class="fas fa-angle-down"></i>
 
-            <div class="assist">
-                <ul>
-                    <h4>協助</h4>
+                        </div>
+                        <li class="def"><a href="#">折扣碼</a></li>
+                        <li class="def"><a href="#">最新消息</a></li>
+                        <li class="def"><a href="#">工藝</a></li>
+                    </ul>
+    
+                </div>
 
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">退換貨</a></li>
-                    <li><a href="#">保證</a></li>
-                </ul>
-            </div>
+                <div class="sale drop3">
+                    <ul> 
+                        <div class="assist">
+                        <h4>協助</h4>
+                        <i class="fas fa-angle-down"></i>
 
-            <div class="socialmedia">
+                        </div>
+                        <li class="asss"><a href="#">FAQ</a></li>
+                        <li class="asss"><a href="#">退換貨</a></li>
+                        <li class="asss"><a href="#">保證</a></li>
+                    </ul>
+    
+                </div>
+
+                
+                <div class="sale drop4">
+                    <ul> 
+                        <div class="socialmedia">
+                        <h4>社群媒體</h4>
+                        <i class="fas fa-angle-down"></i>
+
+                        </div>
+                        <li class="pf1"><a href="#">Facebook</a></li>
+                        <li class="pf1"><a href="#">Twitter</a></li>
+                        <li class="pf1"><a href="#">Instagram</a></li>
+                    </ul>
+    
+                </div>
+                <!-- <div class="socialmedia">
                 <ul>
                     <h4>社群媒體</h4>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Instagram</a></li>
                 </ul>
-            </div>
+                </div> -->
 
-            <div class="email">
+                <div class="email">
                 <h1>．填寫信箱獲得最新消息</h1>
                     <input type="email" name="" id="" placeholder="請輸入信箱">
-            </div>
+                </div>
+            
         </div>
+
+            
+
 
 
         </div>
@@ -280,5 +314,84 @@
            }
         });
       </script>
+      <script>
+        var drop = document.querySelectorAll('.drop')
+
+        for (let index = 0; index < drop.length; index++) {
+            const element = drop[index];
+            const footer_bar = element.querySelector('.vv')
+            footer_bar.addEventListener('click',()=>{
+                  const lis = document.querySelectorAll('.abc')
+                  for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                      const li = lis[sub_index];
+                      li.classList.toggle("-on")
+                  }
+                  // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+            });
+            
+        }
+
+        var drop = document.querySelectorAll('.drop2')
+
+        for (let index = 0; index < drop.length; index++) {
+            const element = drop[index];
+            const footer_bar = element.querySelector('.bb')
+            footer_bar.addEventListener('click',()=>{
+                  const lis = document.querySelectorAll('.def')
+                  for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                      const li = lis[sub_index];
+                      li.classList.toggle("-on")
+                  }
+                  // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+            });
+            
+        }
+
+        var drop = document.querySelectorAll('.drop3')
+
+        for (let index = 0; index < drop.length; index++) {
+            const element = drop[index];
+            const footer_bar = element.querySelector('.assist')
+            footer_bar.addEventListener('click',()=>{
+                  const lis = document.querySelectorAll('.asss')
+                  for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                      const li = lis[sub_index];
+                      li.classList.toggle("-on")
+                  }
+                  // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+            });
+            
+        }
+        var drop = document.querySelectorAll('.drop4')
+
+        for (let index = 0; index < drop.length; index++) {
+            const element = drop[index];
+            const footer_bar = element.querySelector('.socialmedia')
+            footer_bar.addEventListener('click',()=>{
+                  const lis = document.querySelectorAll('.pf1')
+                  for (let sub_index = 0; sub_index < lis.length; sub_index++) {
+                      const li = lis[sub_index];
+                      li.classList.toggle("-on")
+                  }
+                  // footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+            });
+            
+        }
+//           const lis = document.querySelectorAll('.abc')
+// console.log(lis)
+//           const li = document.querySelector('.abc')
+// console.log(li)
+
+
+
+      //   var footer_bar = document.getElementsByClassName("vv")[0];
+      //   footer_bar.addEventListener("click", function(){
+      //  footer_bar.closest(".sale").querySelector(".abc").classList.toggle("-on");
+          
+            
+      //   });
+        
+    </script>
+
 </body>
 </html>

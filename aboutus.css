@@ -132,7 +132,6 @@ z-index: 5;
 .logo{
 width:100%;
 max-width: 200px;
-border: 1px solid black;
 box-sizing: border-box;
 margin-left:20px;
 margin-top: -20px;
@@ -142,47 +141,10 @@ margin-top: -20px;
 .logo img{
 
   width:180px; 
-  /* max-width:200px;  */
   display: block;
-  /* margin-left:20px; */
-  border: 1px solid blue;
-
-  /* box-sizing: border-box; */
-
-}
-/* @media screen and (max-width: 575px){
-.logo img{
-  width: 50px;
-  padding:20px;
   
-}
-}
 
-@media screen and (min-width: 576px) and (max-width: 767px){
-.logo img{
-  width:60px;
-  padding:30px;
 }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-.logo img{
-  width:80px;
-  padding:30px;
-}
-}
-
-@media screen and (min-width: 991px) and (max-width: 1199px){
-.logo img{
-  width:100px;
-  padding:30px;
-}
-}
-@media screen and (min-width: 1200px){
-.logo img{
-  width:120px;
-}
-} */
 
 
 .choice{
@@ -230,14 +192,12 @@ display:none;
   max-width:200px;
   width: 100%;
   display: flex;
-  /* border:2px solid blue; */
 }
 
 .choice2 ul{
 flex-grow: 1;
 display: flex;
 margin-top: 70px;
-/* border:1px solid red; */
 }
 
 
@@ -261,22 +221,18 @@ color: #223262;
 @media screen and (max-width: 575px){
 .choice2 img{
   width: 20px;
-  
-  
 }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px){
 .choice2 img{
   width:20px;
-  
 }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 .choice2 img{
   width:25px;
-  
 }
 }
 
@@ -294,16 +250,10 @@ color: #223262;
 
 
 .choice2 a{
-/* max-width: 20px;
-height:10px; */
 text-decoration: none;
 background-color:none;
 color:red;
 }
-
-
-
-
 
 .breadcrumb{
     margin-top: 30px;
@@ -325,7 +275,6 @@ color:red;
   .breadcrumb li{
   font-size:20px;
   }
-  
   }
 
 /* brandwhole strat */
@@ -338,13 +287,12 @@ color:red;
 }
 
 .concept{
-    border: 1px black solid;
     max-width: 1196px;
     display: flex;
     margin-bottom: 100px;
 }
 .concept_pic{
-  border:black 1px solid;
+
 }
 .concept_pic img{
     max-width: 364px;
@@ -361,7 +309,6 @@ color:red;
     box-sizing: border-box;
     text-overflow: ellipsis;
     overflow: hidden;
-    border:solid 1px black;
 }
 @media screen and (max-width: 800px){
   .concept{
@@ -420,7 +367,6 @@ color:red;
   box-sizing: border-box;
   text-overflow: ellipsis;
   overflow: hidden;
-  border:solid 1px black;
   order:-1;
 }
 @media screen and (max-width: 800px){
@@ -483,7 +429,6 @@ color:red;
   box-sizing: border-box;
   text-overflow: ellipsis;
   overflow: hidden;
-  border:solid 1px black;
   
 }
 @media screen and (max-width: 800px){
@@ -527,7 +472,6 @@ color:red;
   display: flex;
   text-align: center;
   padding-top: 40px;
-  /* border:5px solid rgb(238, 89, 89); */
   flex-wrap: wrap;
 
 }
@@ -544,8 +488,6 @@ color:red;
   width:220px;
   margin-bottom: 30px;
   padding-bottom: 5px;
-  border:2px solid darkkhaki;
-  /* margin:0 auto; */
   
 }
 
@@ -565,12 +507,14 @@ color:red;
   width: 60px;
   line-height: 40px;
   font-size: 17px;
+  text-align: center;
+  
 }
+
 
 .resource{
   
   flex-grow: 1;  
-  /* border:solid 1px black; */
   width:220px;
   margin-bottom: 30px;
   padding-bottom: 5px;
@@ -595,11 +539,7 @@ color:red;
 }
 
 .assist{
-  /* flex-grow: 1;
-  /* border:solid 1px black; */
-  /* width:220px;
-  margin-bottom: 30px;
-  padding-bottom: 5px; */ 
+  
 }
 
 .assist ul{
@@ -652,7 +592,6 @@ color:red;
   margin-bottom: 30px;
   padding-bottom: 5px;
   margin:0 auto;
-  border:  2px green solid;
 }
 
 .email h1{

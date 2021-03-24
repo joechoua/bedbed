@@ -7,7 +7,6 @@ body{
     font-family:  sans-serif;   
    font-size: 25px;
 }
-
 .wrap{
   margin: 0 auto;
   max-width: 1196px;
@@ -55,7 +54,8 @@ border:none;
 }
 .hamburger--emphatic{
 display:none;
-/* width: 60px; */
+max-width: 100px;
+width: 100%;
 }
 @media (max-width:800px){
 #hamburger{
@@ -133,7 +133,6 @@ z-index: 5;
 .logo{
 width:100%;
 max-width: 200px;
-border: 1px solid black;
 box-sizing: border-box;
 margin-left:20px;
 margin-top: -20px;
@@ -143,47 +142,10 @@ margin-top: -20px;
 .logo img{
 
   width:180px; 
-  /* max-width:200px;  */
   display: block;
-  /* margin-left:20px; */
-  border: 1px solid blue;
-
-  /* box-sizing: border-box; */
-
-}
-/* @media screen and (max-width: 575px){
-.logo img{
-  width: 50px;
-  padding:20px;
   
-}
-}
 
-@media screen and (min-width: 576px) and (max-width: 767px){
-.logo img{
-  width:60px;
-  padding:30px;
 }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-.logo img{
-  width:80px;
-  padding:30px;
-}
-}
-
-@media screen and (min-width: 991px) and (max-width: 1199px){
-.logo img{
-  width:100px;
-  padding:30px;
-}
-}
-@media screen and (min-width: 1200px){
-.logo img{
-  width:120px;
-}
-} */
 
 
 .choice{
@@ -231,14 +193,12 @@ display:none;
   max-width:200px;
   width: 100%;
   display: flex;
-  /* border:2px solid blue; */
 }
 
 .choice2 ul{
 flex-grow: 1;
 display: flex;
 margin-top: 70px;
-/* border:1px solid red; */
 }
 
 
@@ -262,22 +222,18 @@ color: #223262;
 @media screen and (max-width: 575px){
 .choice2 img{
   width: 20px;
-  
-  
 }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px){
 .choice2 img{
   width:20px;
-  
 }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
 .choice2 img{
   width:25px;
-  
 }
 }
 
@@ -295,38 +251,32 @@ color: #223262;
 
 
 .choice2 a{
-/* max-width: 20px;
-height:10px; */
 text-decoration: none;
 background-color:none;
 color:red;
 }
 
-
-
 .breadcrumb{
-  margin-top: 30px;
-  background-color: #F1F4F3;
-  display: flex;
-  padding: 10px;
+    margin-top: 30px;
+    background-color: #F1F4F3;
+    display: flex;
+    padding: 10px;
 }
 
 .breadcrumb li {
-  padding: 2px;
+    padding: 2px;
 }
 .breadcrumb li ::after{
-  content: "  >    ";
+    content: "  >    ";
 }
 .breadcrumb a{
-  text-decoration: none;
+    text-decoration: none;
 }
 @media (max-width:800px){
-.breadcrumb li{
-font-size:20px;
-}
-
-}
-
+  .breadcrumb li{
+  font-size:20px;
+  }
+  }
 
 .survey{
     margin-top: 2px;
@@ -371,7 +321,7 @@ font-size:20px;
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 100px;
-    border: #223262 1px solid;
+    /* border: #223262 1px solid; */
 }
 @media screen and (max-width:615px){
   .information{
@@ -397,7 +347,7 @@ font-size:20px;
     flex-grow: 1;
     padding: 50px 50px;
     align-items:space-between;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 .info_word h1{
@@ -421,7 +371,7 @@ font-size:20px;
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 100px;
-    border:2px solid blue;
+    /* border:2px solid blue; */
 }
 @media screen and (max-width:615px){
   .appointment{
@@ -450,7 +400,7 @@ font-size:20px;
   flex-grow: 1;
   padding: 50px 50px;
   align-items:space-between;
-  border:1px solid black;
+  /* border:1px solid black; */
   order:-2;
 }
 @media screen and (max-width:615px){
@@ -476,47 +426,25 @@ font-size:20px;
 
 
 .document{
-    border: 5px red solid;
     max-width: 1196px;
     width: 100%;
     margin: 0 auto;
     background-color: #F1F4F3;
     box-sizing: border-box;
 }
-/* @media screen and (max-width: 575px){
-    .document input{
-      width:40%;
-      
-    }
-  }
-  
-  @media screen and (min-width: 576px) and (max-width: 767px){
-    .document input{
-        width:50%;
-    }
-    }
-  
-  @media screen and (min-width: 768px) and (max-width: 859px){
-    .document input{
-        width:60%;
-    }
-    }
-  
-  @media screen and (min-width: 860px) and (max-width: 1199px){
-    .document input{
-      width:80%;
-    }
-    } */
+
   
 .docuwhole{
-    border: 1px solid yellow;
-    margin: 0 auto;
+    margin:0 auto;
     max-width: 800px;
     width:100%;
     box-sizing: border-box;
+    padding-left: 20px;
+    
 }
 @media screen and (max-width: 575px){
-  .docuwhole{
+   .docuwhole .name{
+    padding-left:0;
   }
 }
 
@@ -537,13 +465,13 @@ font-size:20px;
 }
 
 .name{
-    border:1px solid black;
     max-width: 900px;
-    width: calc(100%-80px);
+    width: 100%;
     margin-top: 80px;
-    padding-left:80px;
+    /* padding-left:80px; */
     font-weight: bold;
     box-sizing: border-box;
+    margin: 0 auto;
 
 }
 
@@ -560,14 +488,13 @@ font-size:20px;
 }
 
 .sex{
-  border:1px solid sandybrown;
-
-  width: calc(100%-80px);
-  max-width: 900px;
+  width: 100%;
+  max-width: 700px;
 
   margin-top: 40px;
-    padding-left:80px;
+    /* padding-left:80px; */
     display: block;
+    /* margin: 0 auto; */
 }
 
 .sex h1{
@@ -577,7 +504,7 @@ font-size:20px;
 }
 .sex input{
   
-    width: 30px;
+    width: 20px;
     padding: 20px;
     height: 20px;
     margin-top: 10px;
@@ -591,10 +518,10 @@ font-size:20px;
 
 .date{
     max-width: 900px;
-    width: calc(100%-80px);
+    width: 100%;
 
     margin-top: 40px;
-    padding-left:80px;
+    /* padding-left:80px; */
 }
 
 .date h1{
@@ -611,12 +538,10 @@ font-size:20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .people{
-    border:1px solid black;
     max-width: 900px;
-    width: calc(100%-80px);
-
+    width: 100%;
     margin-top: 40px;
-    padding-left:80px;
+   
 }
 
 
@@ -647,9 +572,9 @@ font-size:20px;
 
 .tel{
     max-width: 900px;
-    width: calc(100%-80px);
+    width: 100%;
     margin-top: 40px;
-    padding-left:80px;
+    
     font-weight: bold;
 
 }
@@ -667,9 +592,9 @@ font-size:20px;
 
 .email1{
     max-width: 900px;
-    width: calc(100%-80px);
+    width: 100%;
     margin-top: 40px;
-    padding-left:80px;
+    
     font-weight: bold;
 
 }
@@ -687,9 +612,8 @@ font-size:20px;
 
 .comment{
     max-width: 900px;
-    width: calc(100%-80px);
+    width:100%;
     margin-top: 20px;
-    padding-left:80px;
     font-weight: bold;
 
 }
@@ -724,60 +648,73 @@ font-size:20px;
 /* footer start */
 .footer{
 
-    background-color:#223262 ;
-    color: white;
-    /* margin-top: 20px; */
+  background-color:#223262 ;
+  color: white;
+  /* margin-top: 20px; */
 
 }
 .footer a:hover{
-    text-decoration:none;
-    color:rgb(238, 89, 89);
+  text-decoration:none;
+  color:rgb(238, 89, 89);
 }
 
 .footer_bar{
-    max-width: 1200px;
-    width:100%;
-    display: flex;
-    text-align: center;
-    padding-top: 40px;
-    /* border:5px solid black; */
-    flex-wrap: wrap;
+  max-width: 1196px;
+  width:100%;
+  display: flex;
+  text-align: center;
+  padding-top: 40px;
+  flex-wrap: wrap;
 
 }
-.sale{
-    flex-grow: 1;
-    text-align: center;
-    width:220px;
-    margin-bottom: 20px;
+
+@media screen and (max-width: 439px){
+.footer_bar li{
+  display:none;
 }
+}
+.sale{
+/* display:inline-block; */
+  flex-grow: 1;
+  text-align: center;
+  width:220px;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  
+}
+
 
 .sale ul{
 
-   
+ 
 }
 
 .sale li{
 
 }
 .sale a {
-    text-decoration: none;
-    padding: 5px;
-    color: white;
-    width: 60px;
-    line-height: 40px;
-    font-size: 17px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  width: 60px;
+  line-height: 40px;
+  font-size: 17px;
+  text-align: center;
+  
 }
 
+
 .resource{
-    
-    flex-grow: 1;  
-    /* border:solid 1px black; */
-    width:220px;
+  
+  flex-grow: 1;  
+  width:220px;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
 
 }
 
 .resource ul{
-   
+ 
 }
 
 .resource li{
@@ -785,18 +722,16 @@ font-size:20px;
 }
 
 .resource a{
-    text-decoration: none;
-    padding: 5px;
-    color: white;
-    width: 60px;
-    line-height: 40px;
-    font-size: 17px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  width: 60px;
+  line-height: 40px;
+  font-size: 17px;
 }
 
 .assist{
-    flex-grow: 1;
-    /* border:solid 1px black; */
-    width:220px;
+  
 }
 
 .assist ul{
@@ -808,18 +743,20 @@ font-size:20px;
 }
 
 .assist a{
-    text-decoration: none;
-    padding: 5px;
-    color: white;
-    width: 60px;
-    line-height: 40px;
-    font-size: 17px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  width: 60px;
+  line-height: 40px;
+  font-size: 17px;
 }
 
 .socialmedia{
-    flex-grow: 1;
-    width:220px;
-    /* border: 1px black solid; */
+  /* flex-grow: 1;
+  width:220px;
+  margin-bottom: 30px;
+  padding-bottom: 5px; */
+  /* border: 1px black solid; */
 }
 
 .socialmedia ul{
@@ -832,30 +769,91 @@ font-size:20px;
 }
 
 .socialmedia a{
-    text-decoration: none;
-    padding: 5px;
-    color: white;
-    width: 60px;
-    line-height: 40px;
-    font-size: 17px;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  width: 60px;
+  line-height: 40px;
+  font-size: 17px;
 }
 
 .email{
-    width: 250px;
-    padding-left:50px;
-    font-weight: bold;
-
-    /* border:  1px black solid; */
+  width: 250px;
+  /* padding-left:30px; */
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  margin:0 auto;
 }
 
 .email h1{
-    font-size: 20px;
+  font-size: 20px;
 
 }
 .email input{
-    width: 200px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-    
+width:calc(100% -20px);
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
 }
+.-on{
+display: block !important;
+
+}
+/* 資源 */
+@media screen and (min-width: 439px){
+.bb .fas{
+  display: none;
+}
+} 
+@media screen and (max-width: 439px){
+.bb {
+justify-content: center;
+display:flex;
+margin: 0 auto;
+
+}
+} 
+/* 商品 */
+@media screen and (min-width: 439px){
+.vv .fas{
+  display: none;
+}
+} 
+@media screen and (max-width: 439px){
+.vv {
+justify-content: center;
+display:flex;
+margin: 0 auto;
+}
+} 
+
+/* 協助 */
+@media screen and (min-width: 439px){
+.assist .fas{
+  display: none;
+}
+} 
+@media screen and (max-width: 439px){
+.assist{
+justify-content: center;
+display:flex;
+margin: 0 auto;
+}
+} 
+
+/* 社群 */
+@media screen and (min-width: 439px){
+.socialmedia .fas{
+  display: none;
+}
+} 
+@media screen and (max-width: 439px){
+.socialmedia{
+justify-content: center;
+display:flex;
+margin: 0 auto;
+}
+} 

@@ -330,7 +330,7 @@ color:red;
     /* border:1px solid red; */
     margin: 0 auto;
     max-width: 70px;
-    width: 100%;
+    width:calc (100%-10px);
     box-sizing: border-box;
     padding: 10px;
     display: block;

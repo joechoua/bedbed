@@ -336,7 +336,8 @@ color:red;
     display: block;
     text-align: center;
     flex-grow: 1;
-    -webkit-object-fit: contain;
+    height:auto;
+    /* -webkit-object-fit: contain; */
 
 }
 

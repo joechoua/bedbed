@@ -336,7 +336,8 @@ color:red;
     display: block;
     text-align: center;
     flex-grow: 1;
-    object-fit: contain;
+    -webkit-object-fit: contain;
+
 }
 
 .product_info{
